@@ -1,0 +1,17 @@
+# shema.yml
+
+version: 2
+
+sources:
+   - name: raw
+     schema : gz_raw_data
+     tables:
+       - name: product
+         identifier: raw_gz_product
+         description: prix produit
+       - name: sales
+         identifier : raw_gz_sales
+         description: date quantité turnover
+       - name: ship
+         identifier : raw_gz_ship
+         description: log cost, ship cost
