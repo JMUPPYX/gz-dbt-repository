@@ -1,0 +1,50 @@
+# shema.yml
+
+version: 2
+
+sources:
+   - name: raw
+     schema : gz_raw_data
+     tables:
+       - name: product
+         identifier: raw_gz_product
+         description: prix produit
+         columns:
+           - name: products_id
+             description: nom du produit
+             tests:
+              - unique
+              - not_null
+           - name: purchase_price
+             description: prix du produit
+       - name: sales
+         identifier : raw_gz_sales
+         description: date quantité turnover
+         columns:
+           - name: date_date
+             description: nom du produit
+           - name: orders_id
+             description: prix du produit
+           - name: products_id
+             description: id du produit
+           - name: revenue
+             description: revenue achat
+           - name: quantity
+             description: quantité
+       - name: ship
+         identifier : raw_gz_ship
+         description: produit vendus
+         columns:
+           - name: orders_id
+             description: id du produit
+             tests:
+              - unique
+              - not_null
+           - name: shipping_fee
+             description: prix d'achat
+           - name: shipping_fee_1
+             description: prix d'achat
+           - name: logcost
+             description: cout logistique
+           - name: ship_cost
+             description: cout d'achat
