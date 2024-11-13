@@ -10,4 +10,5 @@ SELECT
     ROUND(s.revenue - (s.quantity * p.purchase_price), 2) AS margin
 FROM {{ ref("stg_raw__sales") }} s
 LEFT JOIN {{ ref("stg_raw__product") }} p
-    ON s.pdt_id = p.products_id
+using(products_id)
+    -- ON s.pdt_id = p.products_id
