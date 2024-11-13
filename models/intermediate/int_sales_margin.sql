@@ -1,7 +1,4 @@
 -- int_sales_margin
-
-
-
 SELECT
     p.products_id,
     s.date_date,
