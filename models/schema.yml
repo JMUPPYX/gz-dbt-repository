@@ -48,3 +48,75 @@ sources:
              description: cout logistique
            - name: ship_cost
              description: cout d'achat
+       - name: adwords
+         identifier: raw_gz_adwords
+         description: "Donnees des campagnes ADWORDS"
+         columns:
+            - name: date_date
+              description: "Date of campaign"
+            - name: paid_source
+              description: "paid_source"
+            - name: campaign_key
+              description: "campaign_key"
+            - name: camPGN_name
+              description: "camPGN_name"
+            - name: ads_cost
+              description: "ads_cost"
+            - name: impression
+              description: "impression"
+            - name: click
+              description: "click"
+       - name: bing
+         identifier: raw_gz_bing
+         description: "Donnees des campagnes BING"
+         columns:
+          - name: date_date
+            description: "Date of campaign"
+          - name: paid_source
+            description: "paid_source"
+          - name: campaign_key
+            description: "campaign_key"
+          - name: camPGN_name
+            description: "camPGN_name"
+          - name: ads_cost
+            description: "ads_cost"
+          - name: impression
+            description: "impression"
+          - name: click
+            description: "click"
+       - name: criteo
+         identifier: raw_gz_criteo
+         description: "Donnees des campagnes CRITEO"
+         columns:
+          - name: date_date
+            description: "Date of campaign"
+          - name: paid_source
+            description: "paid_source"
+          - name: campaign_key
+            description: "campaign_key"
+          - name: camPGN_name
+            description: "camPGN_name"
+          - name: ads_cost
+            description: "ads_cost"
+          - name: impression
+            description: "impression"
+          - name: click
+            description: "click"
+       - name: facebook
+         identifier: raw_gz_facebook
+         description: "Donnees des campagnes FACEBOOK"
+         columns:
+          - name: date_date
+            description: "Date of campaign"
+          - name: paid_source
+            description: "paid_source"
+          - name: campaign_key
+            description: "campaign_key"
+          - name: camPGN_name
+            description: "camPGN_name"
+          - name: ads_cost
+            description: "ads_cost"
+          - name: impression
+            description: "impression"
+          - name: click
+            description: "click"
